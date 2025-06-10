@@ -1,0 +1,34 @@
+Documentación breve de:
+
+    #1: Cómo ejecutar el sistema.
+
+1.a) En la terminal y ubicarse en la carpeta raíz del proyecto: 
+ en mi caso: "cd ~/COMPUTACIOIN_2025/Clinica/computaci-n-2025-05-27-gesti-n-cl-nica-zoecamus-1"
+1.b) El programase ejecuta con el siguiente comando:python3 CLI.py
+en eel cual se abre el menu de opciones de la interfaz gráfica
+1.c) Seleccionar una opción e ingresar los datos que se pidan
+    
+    
+    #2: Cómo ejecutar las pruebas.
+
+2.a) En el archivo comandos_test.txt se encuentra una lista de comandos que se pueden ejecutar para ejecutar las pruebas.
+   
+   
+    #3: Explicación de diseño general.
+    
+3.a) El sistema está diseñado usando programación orientada a objetos (POO). Cada componente principal de la clínica está representado por una clase.
+3.b)Estructura de clases
+Paciente=Representa a un paciente (nombre, DNI, fecha de nacimiento)
+Medico=Representa a un médico (nombre, matrícula, especialidades)
+Especialidad=Representa un tipo de atención médica y los días que se brinda
+Turno=Representa un turno entre médico y paciente con fecha y especialidad
+Receta=Representa una receta de un médico para un paciente con medicamentos
+HistoriaClinica=Agrupa turnos y recetas de un paciente
+Clinica=Gestiona todos los datos y operaciones (registros, turnos, recetas)
+CLI=Interfaz por consola para interactuar con el sistema
+3.c)Validaciones y errores
+Las validaciones de datos se hacen dentro de cada clase del modelo.
+Se usan excepciones personalizadas para manejar errores como (Fecha inválida, Turno duplicado, etc)
+La interfaz captura esos errores y muestra mensajes claros al usuario final.
+
+
