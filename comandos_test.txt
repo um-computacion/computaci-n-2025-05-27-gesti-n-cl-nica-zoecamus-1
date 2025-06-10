@@ -1,0 +1,7 @@
+python3 -m MEDICO.test_medico
+python3 -m PACIENTE.test_paciente
+python3 -m ESPECIALIDAD.test_especialidad
+python3 -m TURNO.test_turno
+python3 -m RECETA.test_receta
+python3 -m HISTORIA_CLINICA.test_historiaclinica
+python3 -m CLINICA.test_clinica
